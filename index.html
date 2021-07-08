@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+
+<script>
+    function journalism() {
+      document.getElementById("demo").innerHTML = "BA in Journalism	3 Years	PG Diploma in Print & Broadcast Journalism	1 Year";
+    }
+    function massmedia() {
+      document.getElementById("demo1").innerHTML = "B.A. (Hons.) Mass Communication (B.A.M.C.) 3 Years B.A. in Mass Communication 3 Years BMC -Bachelor of Mass Communication 3 Years Bachelors of Mass Media 3 Years B.Sc. in Mass Communication, Journalism, and Advertising 3 Years Graduate Diploma in Mass Communication + Bachelor of Mass Communication 3 Years ";
+    }
+    function teaching() {
+      document.getElementById("demo2").innerHTML = "BA + B.ED. INTEGRATED COURSE B.EL.ED.- B.El.Ed D.EL.ED. B.SC. + B.ED. INTEGRATED COURSE B.P.ED. (Bachelor of Physical Education) DPE ( Diploma in Physical Education) ";
+    }
+    function cmp() {
+      document.getElementById("computer").innerHTML = "B.E. or B.Tech. in Computer Engineering – 4 years ";
+    }
+    function sw() {
+      document.getElementById("software").innerHTML = "	B.E. or B.Tech. in Software Engineering – 4 years";
+    }
+    </script>
+   
+</head>
+<body>
+    <h1 style="text-align: center;">Course List</h1>
+    <div>
+        <div class="english">
+            <h2>English</h2>
+            <ol>
+            <li><a href="eng.html"><button type="button" onclick="journalism()">Journalism</button></a></li>
+            <br>
+            <li><button type="button" onclick="massmedia()">Mass Media Communication</button></li><br><p id="demo1"></p>
+            <li><button type="button" onclick="teaching()">Teaching and Phd</button></li><br><p id="demo2"></p>
+                   </ol>
+        </div>
+        <div class="computer">
+            <h2>Computer Science</h2>
+            <ol>
+                <li><button type="button" onclick="cmp()">Computer Engineer</button></li> <p id="computer"></p>
+                <li><button type="button" onclick="sw()">Software Engineer</button></li> <p id="software"></p>
+            </ol>
+        </div>
+        
+    </div>
+   
+</body>
+</html>
